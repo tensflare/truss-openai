@@ -1,0 +1,29 @@
+{
+  "name": "@tensflare/openai",
+  "version": "0.1.0",
+  "publishConfig": { "access": "public" },
+  "description": "OpenAI Agents SDK middleware that injects Truss recording into agent handoffs and runs",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "audit": "npm audit --audit-level=high",
+    "outdated": "npm outdated",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "vitest": "^3.1.0",
+    "@types/node": "^22.0.0"
+  }
+}
