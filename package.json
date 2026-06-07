@@ -1,6 +1,10 @@
 {
   "name": "@tensflare/openai",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tensflare/truss-openai.git"
+  },
   "publishConfig": { "access": "public" },
   "description": "OpenAI Agents SDK middleware that injects Truss recording into agent handoffs and runs",
   "type": "module",
